@@ -1,0 +1,252 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #e8cbcf;
+    margin: auto;
+    padding: 0;
+}
+/* title */
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title img{
+    height: 120px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    border-radius: 20px;
+}
+/* main-content */
+.maincontent{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+}
+.maincontent input:focus {
+    background-color: #fff;
+    color: #ff4136;
+    font-weight: 700;
+}
+  
+.maincontent input:valid {
+    color: #ff4136;
+    font-weight: 700;
+}
+  
+::placeholder {
+    color: #ff4136;
+    font-size: 20px;
+    text-align: center;
+}
+label{
+    color: #ff5757;
+    font-size: 32px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
+.inputField{
+    text-align: center;
+    font-size: 32px;
+}
+input{
+    width: 300px;
+    font-size: 25px;
+    height: 30px;
+    border-color: #ff5757;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: 10px solid #db7196;
+    outline: none;
+    text-transform: capitalize;
+    box-shadow: 0 10px 23px 10px #00000020;
+    text-align: center;
+    margin: 10px;
+}
+/* calculate button */
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.buttonContainer button {
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    color: #ff4136;
+    padding: 15px 30px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    font-weight: 600;
+    box-shadow: 0 10px 23px 10px #00000020;
+}
+.buttonContainer button:hover {
+    background-color: transparent;
+    border: 2px solid #e8cbcf;
+    color: #ff4136;
+}
+/* result area */
+.result h2{
+    text-align: center;
+    color: #ff4136;
+    border-bottom: 2px solid #fff;
+    width: 100px;
+    margin-bottom: 90px;
+    margin: auto;
+    margin-bottom: 90px;
+}
+.heart-shape{
+    margin: auto;
+    z-index: -1;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background-color: #f08faf;
+    text-align: center;
+}
+.heart-shape #yourlovescoreis{
+    color: #ff4136;
+    font-size: 20px;
+    transform: rotate(-45deg);
+    text-align: start;
+
+}
+.heart-shape #score{
+    color: #ff4136;
+    font-size: 50px;
+    transform: rotate(-45deg);
+    padding-right: 10px;
+
+}
+.heart-shape:before,
+.heart-shape:after{
+    z-index: -1;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    content: '';
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    background-color:#f08faf;
+}
+.heart-shape:before{
+    bottom: 0px;
+    left: -100px;
+}
+.heart-shape:after{
+    top: -100px;
+    right: 0px;
+}
+.heart-shape p,h1{
+    z-index: 99;
+    color: black;
+}
+/* love-info */
+#loveinfo{
+    width: 600px;
+    font-family:cursive;
+    font-size: 28px;
+    color: #ff4136;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+/* recalculate */
+.relod-container{
+    text-align: center;
+    font-size: 15px;
+}
+.reload{
+    cursor:pointer;
+    display: none;
+    margin-top: 30px;
+    font-weight: 700;
+}
+/* footer */
+.footer{
+    background-color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.footer span{
+    color: #db719b;
+    font-size: 25px;
+    font-weight: 600;
+}
+.footer small{
+    color:#bca426;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+    body {
+      font-size: 16px;
+    }
+    img{
+        width: 400px;
+        height: 100px;
+        margin-left: 40%;
+    }
+    h1 {
+      font-size: 20px;
+    }
+    .maincontent {
+      margin: 50px auto 20px 50px;
+      display: grid;
+    }
+    .maincontent input {
+      margin: 20px 0;
+      width: 80%;
+      height: 25px;
+    }
+  
+    .maincontent input:focus {
+      width: 90%;
+    }
+    .buttonContainer{
+        margin-left: 90px;
+    }
+    button {
+      font-size: 16px;
+      padding: 15px 5%;
+     
+    }
+  
+    .result {
+      width: 90%;
+      margin: 70px 0 20px 70px;
+    }
+  
+   #loveinfo{
+    font-size: 20px;
+    width: 300px;
+   }
+    #score {
+      font-size: 20px;
+    }
+    .footer{
+        font-size: 20px;
+        margin-left: 60px;
+    }
+}
+
+
+
+

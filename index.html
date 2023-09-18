@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Darshil Laloriya">
+    <meta name="keywords" content="love clculator,prank,calculate your love">
+    <meta name="copyright" content="darshil all right reserved.">
+    <title>Love Calculator</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!--favicon  -->
+     <link rel="shortcut icon" href="./assets/favi.png" type="image/x-icon">
+</head>
+<body>
+   <div class="wrapper">
+    <div class="title">
+      <img src="./assets/title-top.png" alt="" class="header">
+    </div>
+    <div class="maincontent">
+        <div class="inputField">
+          <!-- Your name Inputfield -->
+          <label for="yourname">*Your Name</label><br />
+          <input
+            type="text"
+            id="yourname"
+            placeholder="Enter Your Name"
+            spellcheck="false"
+            maxlength="30"
+            required
+          />
+        </div>
+        <div class="inputField">
+          <!-- His/Her name Inputfield -->
+          <label for="theirname">*His/Her Name</label><br />
+          <input
+            type="text"
+            id="theirname"
+            placeholder="Enter His/Her Name"
+            spellcheck="false"
+            maxlength="30"
+            required
+          />
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <button type="submit">
+          <i class='bx bxs-heart-circle bx-tada' ></i>CALCULATE<i class='bx bxs-heart-circle bx-tada' ></i>
+        </button>
+      </div>
+
+      <div class="result">
+        <h2>Result</h2>
+        <div class="divider"></div>
+        <div class="heart-shape">
+          <p id="yourlovescoreis"></p>
+          <h1 id="score"></h1>
+        </div>        
+        <p id="loveinfo"></p>
+       <div class="relod-container">
+        <p id="reload" onClick="window.location.reload();">
+          ↺ Re Calculate
+        </p>
+       </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>
+        Created with <span><i class='bx bxs-heart bx-burst' ></i></span> By <span>Darshil Laloriya</span>
+        <br />
+        <small>#Only For Fun purpose!</small>
+      </p>
+    </div>
+   </div>
+   <script src="./app.js"></script>
+</body>
+</html>
